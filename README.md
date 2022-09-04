@@ -2,7 +2,7 @@
 
 Ngix Container: PHP 7.4.30, MySQL 5.7 and latest phpMyAdmin\
 WordPress Container: PHP 7.4.30, MySQL 5.7, latest phpMyAdmin and latest WordPress\
-GRAV Container: https://github.com/getgrav/docker-grav\
+GRAV Container: https://github.com/getgrav/docker-grav
 
 # Useful Command
 
