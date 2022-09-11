@@ -9,14 +9,14 @@ GRAV Container: https://github.com/getgrav/docker-grav/
 
 > Start, stop, pause, unpause, up and down a container.
 ```
-docker-compose start
-docker-compose stop
+docker-compose start -d
+docker-compose stop -d
 
-docker-compose pause
-docker-compose unpause
+docker-compose pause -d
+docker-compose unpause -d
 
-docker-compose up
-docker-compose down
+docker-compose up -d
+docker-compose down -d
 ```
 
 
