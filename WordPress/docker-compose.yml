@@ -5,7 +5,7 @@ services:
     #container_name: "mysql57"
     volumes:
       - ./db/mysql:/var/lib/mysql
-    restart: always
+    #restart: always
     environment:
       MYSQL_ROOT_PASSWORD: mysqlpassword
       MYSQL_DATABASE: wordpress
@@ -18,7 +18,7 @@ services:
     volumes:
       - ./wordpress/html:/var/www/html
       - ./php/php.ini:/usr/local/etc/php/conf.d/php.ini
-    restart: always
+    #restart: always
     depends_on:
       - db
     ports:
@@ -28,12 +28,17 @@ services:
       WORDPRESS_DB_NAME: wordpress
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
-
+      #WORDPRESS_CONFIG_EXTRA: |
+      #  define('WP_HOME', 'y.co.jp');
+      #  define('WP_SITEURL', 'y.co.jp');
+ 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
     #container_name: "phpmyadmin"
-    restart: always
+    #restart: always
     depends_on:
       - db
     ports:
       - 4040:80
+    #environment:
+    #    UPLOAD_LIMIT: 500000000
