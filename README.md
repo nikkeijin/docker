@@ -1,5 +1,6 @@
 # Containers
 
+Apache Container: PHP 8.1.0, Latest MySQL and latest phpMyAdmin\
 Ngix Container: PHP 7.4.30, MySQL 5.7 and latest phpMyAdmin\
 WordPress Container: PHP 7.4.30, MySQL 5.7, latest phpMyAdmin and latest WordPress\
 GRAV Container: https://github.com/getgrav/docker-grav/
