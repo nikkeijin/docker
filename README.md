@@ -2,21 +2,21 @@
 
 Apache Container: PHP 8.1.0, Latest MySQL and latest phpMyAdmin\
 Ngix Container: PHP 7.4.30, MySQL 5.7 and latest phpMyAdmin\
-WordPress Container: PHP 7.4.30, MySQL 5.7, latest phpMyAdmin and latest WordPress\
+WordPress Container: PHP 7.4.30, Latest MySQL, latest phpMyAdmin and latest WordPress\
 GRAV Container: https://github.com/getgrav/docker-grav/
 
 ## Useful Command
 
 ### Start, stop, pause, unpause, up and down a container
 ```bash
-docker-compose start -d
-docker-compose stop -d
+docker-compose start
+docker-compose stop
 
-docker-compose pause -d
-docker-compose unpause -d
+docker-compose pause
+docker-compose unpause
 
 docker-compose up -d
-docker-compose down -d
+docker-compose down
 ```
 
 ### Show running containers
